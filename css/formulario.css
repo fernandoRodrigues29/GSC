@@ -1,0 +1,172 @@
+body{
+
+}
+main{
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    border:0px solid red;
+    background: #fbfdfd;
+}
+#cabecalho{
+    position: relative;
+    border:1px solid #d6d6d6;
+    box-shadow: 1px 10px 12px #d6d6d6;
+    background: #fff;
+}
+
+#form-topo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+#form-topo input{
+    padding: 8px;
+    font-size: 1em;
+    outline: none;
+    border: 0;
+    width: 70%;
+}
+
+.campo-pesquisar
+{
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 0.4em;
+    width: 65%;
+}
+.btn-add{
+    background: #ccc;
+    border-radius: 50%;
+    padding: 3px;
+}
+/*lista*/
+#area-meio{
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+}
+.card-lista
+{
+    display: grid;
+    align-items: center;
+    border: 1px solid #d6d6d6;
+    border-radius: 16px;
+    width: 86%;
+    height: auto;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 1vh;
+    background-color: #fff;
+}
+.info-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-card {
+    background: #ccc;
+    border-radius: 16px;
+    padding: 5px;
+    height: auto;
+    text-align: center;
+}
+.img-card img{
+    width: 40%;
+}
+.info-card{
+    padding-left: 20px;
+}
+/*formulario*/
+.input-label{
+    margin-bottom: 2vh;
+    color: #a9a9a9;
+}
+.input-form{
+    padding: 5px;
+    color: #a9a9a9;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid #7d7a7a;
+    color: #242424;
+}
+.card-lista-botoes{
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.btn{
+    border: 0;
+    padding: 0;
+    width: 90%;
+    text-align: center;
+    padding: 1rem;
+}
+.btn-img{
+    border: #0332b3;
+    background-color: #1246d4;
+    color: #fff;
+    border-radius: 16px;
+}
+
+
+.btn-cancel{
+    padding: 15px;
+    border:1px solid #ccc;
+    border-radius: 16px;
+    background: #fff;
+    width: 80%;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;	
+}
+.btn-submit{
+    padding: 15px;
+    border:1px solid #ccc;
+    border-radius: 16px;
+    background: #1945c1;
+    border: 1px solid blue;
+    color: #fff;
+    width: 80%;
+    text-align: center;
+}
+/* chck box */
+.cards-sexo
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.card-sexo
+{
+    padding: 10px;
+    border: 1px solid #9f9999;
+    border-radius: 8px;
+    transition: 300ms;
+}
+.card-sexo:hover{
+    transform: scale(.9);
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+.text-center
+{
+    text-align: center;
+}
+/* fim check box */
+/* input box */
+.input-box
+{
+    display: grid;
+    margin-bottom: 10px;
+}
+.select-option-form{
+    padding: .5rem;
+}

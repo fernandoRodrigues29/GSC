@@ -1,0 +1,128 @@
+
+main{
+	max-width: 500px;
+	margin: 0 auto;
+	display: grid;
+	border:0px solid red;
+	background: #fbfdfd;
+}
+#cabecalho{
+	position: relative;
+	border:1px solid #d6d6d6;
+	box-shadow: 1px 10px 12px #d6d6d6;
+	background: #fff;
+	max-height:12vh;
+}
+
+#form-topo{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 15px;
+}
+
+#form-topo input{
+	padding: 8px;
+	font-size: 1em;
+	outline: none;
+	border: 0;
+	width: 70%;
+}
+
+.campo-pesquisar
+{
+	border: 1px solid #ccc;
+	border-radius: 16px;
+	padding: 0.4em;
+	width: 65%;
+}
+.btn-add{
+	background: #ccc;
+	border-radius: 50%;
+	padding: 3px;
+}
+/*lista*/
+#area-meio{
+	padding-top: 6vh;
+	padding-bottom: 6vh;
+	position: relative;
+	overflow: hidden;
+}
+.card-lista
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	border: 1px solid #d6d6d6;
+	border-radius: 16px;
+	width: 80%;
+	height: auto;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	margin-bottom: 1vh;
+	background-color: #fff;
+	/* animation: animacao 300ms; */
+}
+/* animação aninhadas */
+	.card-lista:nth-child(1){
+		animation: animacao 500ms;
+	}
+	.card-lista:nth-child(2){
+		animation: animacao 500ms;
+		animation-delay: 100ms;
+		animation-fill-mode: backwards;
+	}
+	.card-lista:nth-child(3){
+		animation: animacao 500ms;
+		animation-delay: 200ms;
+		animation-fill-mode: backwards
+	}
+	.card-lista:nth-child(4){
+		animation: animacao 500ms;
+		animation-delay: 300ms;
+		animation-fill-mode: backwards
+	}
+	.card-lista:nth-child(5){
+		animation: animacao 500ms;
+		animation-delay: 400ms;
+		animation-fill-mode: backwards
+	}
+/* fim animacao aninhadas */
+
+.card-lista .acoes-card
+{
+	display: flex;
+	justify-content: flex-end;
+}
+.info-card{
+	display: flex;
+	flex-direction: column;
+}
+
+.img-card {
+	background: #ccc;
+	border-radius: 16px;
+	padding: 5px;
+	height: auto;
+	text-align: center;
+}
+.img-card img{
+	width: 40%;
+}
+.info-card{
+	padding-left: 20px;
+}
+
+/* animação */
+@keyframes animacao 
+{
+from{
+	transform: translateX(-15vw);
+	opacity: 0;
+}to{
+	transform: translateX(0vw);
+	opacity: 1;
+}	
+}

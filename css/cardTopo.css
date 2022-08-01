@@ -1,0 +1,6 @@
+.destaque a{
+    color: green;
+}
+#cards-baixo .card {
+    cursor: pointer;
+}
